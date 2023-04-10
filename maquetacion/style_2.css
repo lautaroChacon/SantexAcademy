@@ -4,18 +4,23 @@
   box-sizing: border-box;
 }
 
+/*Header*/
+
 .header {
   border-bottom: 1px solid gray;
   padding: 10px 100px;
-  font-size: 15px;
   display: flex;
   justify-content: space-between;
+  /*margin-top: 7px;*/
 }
 
 .menu-horizontal {
   list-style: none;
   display: flex;
+  font-size: 13px;
   justify-content: space-around;
+  font-family: 'Rubik', sans-serif;
+  padding: 10px;
 }
 
 .menu-horizontal > li > a {
@@ -36,11 +41,11 @@
   list-style: none;
   border: 1px solid gray;
   background-color: white;
-  top: 64px;
 }
 
-.menu-horizontal li:hover .menu-vertical {
+.menu-horizontal > li:hover > .menu-vertical {
   display: block;
+  top: 72px;
 }
 
 .menu-vertical li a {
@@ -50,10 +55,66 @@
   text-decoration: none;
 }
 
-.redondo {
+.menu-horizontal > .redondo {
   background-color: white;
-  border: 1px solid black;
+  border: 2px solid black;
+  font-family: 'Rubik', sans-serif;
+  display: block;
   border-radius: 25px;
   padding: 0px 15px;
   height: 32px;
+}
+
+.menu-horizontal > .redondo:hover {
+  background-color: black;
+  color: white;
+}
+
+/*Main*/
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  padding: 87px;
+  text-align: center;
+  font-size: 27px;
+}
+
+.introduccion {
+  /*margin-top: 15px;*/
+  position: relative;
+  left: 550px;
+  bottom: 60px;
+}
+
+.contactanos {
+  background-color: white;
+  border: 2px solid black;
+  display: block;
+  left: 40px;
+  border-radius: 25px;
+  padding: 0px 20px;
+  height: 43px;
+}
+
+.contactanos:hover {
+  background-color: black;
+  color: white;
+}
+
+.sumate {
+  background-color: white;
+  border: 2px solid rgb(57, 27, 141);;
+  color: rgb(57, 27, 141);;
+  display: block;
+  position: relative;
+  left: 160px;
+  bottom: 43px;
+  border-radius: 25px;
+  padding: 0px 20px;
+  height: 43px;
+}
+
+.sumate:hover {
+  background-color: rgb(57, 27, 141);
+  color: white;
 }
